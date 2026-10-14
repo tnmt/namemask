@@ -1,0 +1,26 @@
+{
+  "name": "namemask",
+  "version": "0.1.0",
+  "description": "Replace known personal names with role tokens in text and file trees",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "bin": {
+    "namemask": "./bin/namemask.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test 'test/*.test.js'"
+  }
+}
